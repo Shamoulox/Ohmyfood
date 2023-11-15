@@ -1,0 +1,32 @@
+@use "../base/typographie" as *;
+
+body h1 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700px;
+padding: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

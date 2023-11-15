@@ -1,0 +1,246 @@
+header {
+  text-align: center;
+}
+
+.header__location {
+  height: 50px;
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  padding: 14px 89px 13px 89px;
+}
+.header__logo img {
+  height: 44px;
+  width: 162px;
+  padding: 0px 19px 0 16px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 22px 25px 22px 25px;
+}
+footer .footer__logo {
+  padding-bottom: 16px;
+}
+footer .footer__logo h1 {
+  color: white;
+  font-family: "shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer__contents {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 7px;
+}
+.footer__contents h3 {
+  padding-left: 11px;
+}
+
+.footer__copyrights,
+h3 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 7px;
+}
+
+.operation {
+  height: 440px;
+  margin-top: 48px;
+}
+.operation h1 {
+  padding-left: 20px;
+}
+
+.reservation {
+  background-color: #F6F6F6;
+  text-align: center;
+  height: 287px;
+}
+.reservation h1 {
+  display: flex;
+  justify-content: center;
+  height: 68px;
+  width: 73%;
+  padding: 39px 42px 0 58px;
+  margin: 0;
+}
+.reservation p {
+  width: 84%;
+  height: 46px;
+  padding: 0 26px 27px 34px;
+  margin: 0;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding-top: 54px;
+  padding-bottom: 66px;
+}
+.restaurants h1 {
+  margin-left: 20px;
+  margin-right: 80px;
+  height: 48px;
+}
+
+.cards-contents h2 {
+  margin: 0;
+}
+
+.location__placeholder {
+  border: none;
+  background-color: #EAEAEA;
+  width: 50%;
+  padding-left: 17px;
+}
+.location__placeholder .location__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 15px;
+}
+
+.reservation__button {
+  width: 58%;
+}
+.reservation__button span {
+  color: #ffffff;
+}
+
+.operation__button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.operation__button .fa-solid {
+  padding-right: 27px;
+}
+
+.btn {
+  border-radius: 20px;
+  height: 72px;
+  width: 85%;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+}
+.btn__purple {
+  height: 50px;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.btn__green {
+  background-color: #99e2d0;
+  color: #008766;
+  position: absolute;
+  right: 7%;
+  z-index: 10;
+  margin: 12px 13px;
+  border-radius: 2px;
+}
+
+button {
+  background-color: #F6F6F6;
+  gap: 25px;
+}
+
+.button-hidden {
+  display: none;
+}
+
+.button-favorite {
+  position: absolute;
+  right: 14%;
+  z-index: 10;
+}
+
+.button-round {
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+
+.container__restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.container__restaurants__cards a .restaurants__cards {
+  margin-left: 17px;
+  margin-right: 18px;
+  background-color: white;
+  height: 251px;
+  border-radius: 25px;
+}
+.container__restaurants__cards a .restaurants__cards img {
+  width: 100%;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.cards-contents {
+  height: 77px;
+  padding: 16px 0px 5px 13px;
+  margin: 0;
+}
+.cards-contents p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+body h1 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700px;
+  padding: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*# sourceMappingURL=styles.css.map */

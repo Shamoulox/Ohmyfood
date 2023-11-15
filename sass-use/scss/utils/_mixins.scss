@@ -1,0 +1,20 @@
+// flexbox center vertically and horizontaly
+
+@mixin flexbox-center-both {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// flexbox center horizontaly
+@mixin flexbox-center-horizont {
+  display: flex;
+  justify-content: center;
+}
+
+// flexbox center verticaly
+@mixin flexbox-center-vertical {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

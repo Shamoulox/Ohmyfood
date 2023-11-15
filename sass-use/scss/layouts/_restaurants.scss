@@ -1,0 +1,19 @@
+@use "../utils/" as *;
+
+.restaurants {
+  background-color: $main_backround_color;
+  padding-top: 54px;
+  padding-bottom: 66px;
+
+  h1 {
+    margin-left: 20px;
+    margin-right: 80px;
+    height: 48px;
+  }
+}
+
+.cards-contents {
+  h2 {
+    margin: 0;
+  }
+}

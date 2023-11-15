@@ -1,0 +1,79 @@
+@use "../utils/" as *;
+
+.location__placeholder {
+  border: none;
+  background-color: $primary_backgroung_color;
+  width: 50%;
+  padding-left: 17px;
+
+  .location__button {
+    @include flexbox-center-both;
+    padding: 15px 0 15px;
+  }
+}
+
+.reservation__button {
+  width: 58%;
+  span {
+    color: $tertiary_background_color;
+  }
+}
+
+.operation__button {
+  @include flexbox-center-vertical;
+  gap: 25px;
+  .fa-solid {
+    padding-right: 27px;
+  }
+}
+
+.btn {
+  border-radius: 20px;
+  height: 72px;
+  width: 85%;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+
+  &__purple {
+    height: 50px;
+    background: $button-gradient;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &__green {
+    background-color: $light-green-color;
+    color: $green-color;
+    position: absolute;
+    right: 7%;
+    z-index: 10;
+    margin: 12px 13px;
+    border-radius: 2px;
+  }
+}
+button {
+  background-color: $main_backround_color;
+  gap: 25px;
+}
+
+.button-hidden {
+  display: none;
+}
+
+.button-favorite {
+  position: absolute;
+  right: 14%;
+  z-index: 10;
+}
+
+.button-round {
+  border-radius: 50%;
+  background-color: $primary_color;
+  color: white;
+  height: 24px;
+  width: 24px;
+}

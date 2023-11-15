@@ -1,0 +1,38 @@
+@use "../utils/" as *;
+
+footer {
+  background-color: $secondary_background_color;
+  padding: 22px 25px 22px 25px;
+
+  .footer__logo {
+    padding-bottom: 16px;
+    h1 {
+      color: white;
+      font-family: "shrikhand";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+
+.footer__contents {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 7px;
+  h3 {
+    padding-left: 11px;
+  }
+}
+
+.footer__copyrights,
+h3 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 7px;
+}
