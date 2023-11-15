@@ -10,24 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./images/style.css" />
+    <link rel="stylesheet" href="./SASS-USE/css/styles.css" />
+
     <title>OhMyFood</title>
   </head>
   <body>
     <header>
-      <div class="header_logo">
-        <a href="">
-          <img src="/images/logo/ohmyfood.png" alt="" />
-        </a>
+      <div class="header__logo">
+        <img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
       </div>
-      <div class="header_location">
-        <div>
+      <section class="header__location">
+        <div class="location__button">
           <i class="fa-solid fa-location-dot"></i>
-        <input type="text" placeholder="Paris, Belleville" />
-      </div>
+          <input class="location__placeholder" type="text" placeholder="Paris, Belleville" />
+        </div>
+      </section>
     </header>
     <main container>
       <section class="reservation">
@@ -37,7 +37,7 @@
       </section>
       <section class="operation">
         <h1>Fonctionnement</h1>
-        <div class="operation_button">
+        <div class="operation__button">
           <button>
             <i
               class="fa-solid fa-mobile-screen-button"
@@ -57,16 +57,16 @@
       </section>
       <section class="restaurants">
         <h1>Restaurants</h1>
-        <div class="container_restaurants_cards">
+        <div class="container__restaurants__cards">
           <a href="#">
-            <article class="restaurants_cards">
+            <article class="restaurants__cards">
               <img
                 src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt=""
                 width="500px"
               />
               <button>nouveau</button>
-              <div class="cards-contents">
+              <div class="cards__contents">
                 <div>
                   <h1>La palette du goût</h1>
                   <p>Menilmontant</p>
