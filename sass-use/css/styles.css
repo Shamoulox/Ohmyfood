@@ -34,21 +34,22 @@ footer .footer__logo h1 {
   font-size: 18px;
 }
 
-.footer__contents {
+.footer-container {
+  color: white;
+}
+.footer-container .footer__contents {
   display: flex;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   padding-bottom: 7px;
 }
-.footer__contents h3 {
+.footer-container .footer__contents h3 {
   padding-left: 11px;
 }
-
-.footer__copyrights,
-h3 {
+.footer-container .footer__copyrights,
+.footer-container h3 {
   margin: 0;
-  color: white;
   font-size: 16px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -72,7 +73,6 @@ h3 {
   display: flex;
   justify-content: center;
   height: 68px;
-  width: 73%;
   padding: 39px 42px 0 58px;
   margin: 0;
 }
@@ -134,7 +134,7 @@ h3 {
   width: 85%;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   font-weight: 500;
-  color: black;
+  color: #000000;
   font-size: 16px;
 }
 .btn__purple {
