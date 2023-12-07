@@ -18,3 +18,19 @@ header {
     padding: 0px 19px 0 16px;
   }
 }
+// *** Menu ***
+
+.menu_header {
+  display: flex;
+  align-items: center;
+}
+
+.header__pics {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 275px;
+    z-index: 1;
+  }
+}
+

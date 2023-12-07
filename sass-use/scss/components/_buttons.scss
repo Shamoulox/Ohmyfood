@@ -28,10 +28,7 @@
 }
 
 .btn {
-  border-radius: 20px;
-  height: 72px;
-  width: 85%;
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include btn;
   font-weight: 500;
   font-size: 16px;
 
