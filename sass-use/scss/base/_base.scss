@@ -1,6 +1,7 @@
 @use "../base/typographie" as *;
 
-body ,h1 {
+body,
+h1 {
   margin: 0;
   padding: 0;
 }
@@ -10,10 +11,8 @@ button {
 }
 
 h1 {
-  
   font-size: 24px;
   font-weight: 700px;
-
 }
 
 h2 {
