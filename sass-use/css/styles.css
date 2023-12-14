@@ -29,7 +29,14 @@
   justify-content: center;
 }
 .menu_header i {
-  padding-right: 42px;
+  padding-right: 5%;
+  position: absolute;
+  left: 17px;
+}
+@media (min-width: 1080px) {
+  .menu_header {
+    padding-left: 5%;
+  }
 }
 
 .header__pics img {
@@ -108,12 +115,26 @@ footer .footer__logo h1 {
   padding-bottom: 7px;
 }
 
+@media (min-width: 1080px) {
+  .container-menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .menu {
   padding: 13px;
   background-color: #f6f6f6;
   border-radius: 20px;
   margin-top: -30px;
   position: relative;
+}
+@media (min-width: 1080px) {
+  .menu {
+    width: 60%;
+    padding-left: 13%;
+    padding-right: 13%;
+  }
 }
 .menu h2 {
   margin: 0;
@@ -127,6 +148,11 @@ footer .footer__logo h1 {
   display: flex;
   align-items: center;
   padding-top: 32px;
+}
+@media (min-width: 1080px) {
+  .menu__title {
+    justify-content: center;
+  }
 }
 .menu__title h1 {
   font-family: "shrikhand";
@@ -165,20 +191,19 @@ footer .footer__logo h1 {
 .menu .cards__price p {
   margin-bottom: 0;
 }
-.menu .button_order {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0 40px 0;
-}
 
 .operation {
-  height: 440px;
   margin-top: 48px;
+  margin-bottom: 68px;
 }
 .operation h1 {
   padding-left: 20px;
   height: 57px;
+}
+@media (min-width: 1080px) {
+  .operation h1 {
+    margin-left: 95px;
+  }
 }
 
 .reservation {
@@ -204,10 +229,21 @@ footer .footer__logo h1 {
   padding-top: 54px;
   padding-bottom: 66px;
 }
+@media (min-width: 1080px) {
+  .restaurants {
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+}
 .restaurants h1 {
-  margin-left: 20px;
+  padding-left: 20px;
   margin-right: 80px;
   height: 48px;
+}
+@media (min-width: 1080px) {
+  .restaurants h1 {
+    margin-left: 95px;
+  }
 }
 
 .cards-contents h2 {
@@ -228,7 +264,7 @@ footer .footer__logo h1 {
 }
 
 .reservation__button {
-  width: 58%;
+  width: 50%;
 }
 .reservation__button span {
   color: #ffffff;
@@ -238,7 +274,7 @@ footer .footer__logo h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 @media (min-width: 1080px) {
   .operation__button {
@@ -282,7 +318,7 @@ footer .footer__logo h1 {
 }
 @media (min-width: 1080px) {
   .btn__purple {
-    width: 17%;
+    width: 25%;
   }
 }
 
@@ -314,6 +350,13 @@ button {
   margin-left: -15px;
 }
 
+.button_order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 40px 0;
+}
+
 .container__restaurants__cards {
   display: flex;
   flex-direction: column;
@@ -329,7 +372,7 @@ button {
 }
 @media (min-width: 1080px) {
   .container__restaurants__cards a {
-    width: 35%;
+    width: 40%;
   }
 }
 .container__restaurants__cards a .restaurants__cards {

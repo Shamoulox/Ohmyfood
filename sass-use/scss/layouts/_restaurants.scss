@@ -5,8 +5,16 @@
   padding-top: 54px;
   padding-bottom: 66px;
 
+  @media (min-width: 1080px) {
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+
   h1 {
-    margin-left: 20px;
+    @media (min-width: 1080px) {
+      margin-left: 95px;
+    }
+    padding-left: 20px;
     margin-right: 80px;
     height: 48px;
   }

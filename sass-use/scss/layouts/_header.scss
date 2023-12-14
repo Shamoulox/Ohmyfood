@@ -24,7 +24,13 @@
 .menu_header {
   @include flexbox-center-both;
   i {
-    padding-right: 42px;
+    padding-right: 5%;
+    position: absolute;
+    left:17px;
+
+  }
+  @media (min-width: 1080px){
+    padding-left: 5%;
   }
 }
 

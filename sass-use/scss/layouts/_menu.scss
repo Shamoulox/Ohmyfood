@@ -1,6 +1,18 @@
 @use "../utils/" as *;
 
+.container-menu {
+  @media (min-width: 1080px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .menu {
+  @media (min-width: 1080px) {
+    width: 60%;
+    padding-left: 13%;
+    padding-right: 13%;
+  }
   padding: 13px;
   background-color: $main_backround_color;
   border-radius: 20px;
@@ -16,6 +28,9 @@
     gap: 12px;
   }
   &__title {
+    @media (min-width: 1080px) {
+      justify-content: center;
+    }
     @include flexbox-center-verticaly;
     padding-top: 32px;
     h1 {
@@ -54,9 +69,5 @@
     p {
       margin-bottom: 0;
     }
-  }
-  .button_order {
-    @include flexbox-center-both;
-    padding: 40px 0 40px 0;
   }
 }
