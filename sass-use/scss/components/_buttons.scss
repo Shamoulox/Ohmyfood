@@ -20,18 +20,24 @@
 }
 
 .operation__button {
-  @include flexbox-center-vertical;
+  @include flexbox-center-vertical-column;
   gap: 25px;
-  .fa-solid {
-    padding-right: 27px;
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    justify-content: center;
+    
+
+    
   }
 }
 
 .btn {
   @include btn;
+  @include flexbox-justify-left;
   font-weight: 500;
   font-size: 16px;
-
+  @media (min-width: 1080px) {
+    width: 25%;}
   &__purple {
     height: 50px;
     background: $button-gradient;
@@ -45,12 +51,18 @@
     background-color: $light-green-color;
     color: $green-color;
     position: absolute;
-    right: 7%;
+    right: 0;
     z-index: 10;
     margin: 12px 13px;
     border-radius: 2px;
   }
+  &__purple{
+    @media (min-width: 1080px) {
+      width: 17%
+    }
+  }
 }
+
 button {
   background-color: $main_backround_color;
   gap: 25px;
@@ -62,14 +74,19 @@ button {
 
 .button-favorite {
   position: absolute;
-  right: 14%;
+  right: 7%;
   z-index: 10;
+  top:25%;
 }
 
 .button-round {
+  @include flexbox-center-both;
   border-radius: 50%;
   background-color: $primary_color;
   color: white;
   height: 24px;
   width: 24px;
+  margin-left: -15px;
 }
+
+

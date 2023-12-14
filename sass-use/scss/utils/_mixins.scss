@@ -13,15 +13,31 @@
 }
 
 // flexbox center verticaly
-@mixin flexbox-center-vertical {
+@mixin flexbox-center-verticaly {
   display: flex;
   align-items: center;
 }
+
+// flexbox justify left center verticaly
+@mixin flexbox-justify-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
+// flexbox center verticaly columm
+@mixin flexbox-center-vertical-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 //button or cards
 @mixin btn {
   border-radius: 20px;
   height: 72px;
-  width: 85%;
+  width: 93%;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }

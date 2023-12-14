@@ -1,17 +1,20 @@
 @use "../utils/" as *;
 
-header {
-  text-align: center;
-}
+
 
 .header__location {
   height: 50px;
   background-color: $primary_backgroung_color;
   @include flexbox-center-both;
+
+  .location_button{
+    @include flexbox-center-both
+  }
 }
 
 .header__logo {
   padding: 14px 89px 13px 89px;
+  @include flexbox-center-both;
   img {
     height: 44px;
     width: 162px;
@@ -21,8 +24,10 @@ header {
 // *** Menu ***
 
 .menu_header {
-  display: flex;
-  align-items: center;
+  @include flexbox-center-both;
+  i {
+    padding-right: 42px;
+  }
 }
 
 .header__pics {
