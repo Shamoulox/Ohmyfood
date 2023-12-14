@@ -25,14 +25,12 @@
   justify-content: left;
 }
 
-
 // flexbox center verticaly columm
 @mixin flexbox-center-vertical-column {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
 
 //button or cards
 @mixin btn {

@@ -25,9 +25,6 @@
   @media (min-width: 1080px) {
     flex-direction: row;
     justify-content: center;
-    
-
-    
   }
 }
 
@@ -37,7 +34,8 @@
   font-weight: 500;
   font-size: 16px;
   @media (min-width: 1080px) {
-    width: 25%;}
+    width: 25%;
+  }
   &__purple {
     height: 50px;
     background: $button-gradient;
@@ -56,9 +54,9 @@
     margin: 12px 13px;
     border-radius: 2px;
   }
-  &__purple{
+  &__purple {
     @media (min-width: 1080px) {
-      width: 17%
+      width: 17%;
     }
   }
 }
@@ -76,7 +74,7 @@ button {
   position: absolute;
   right: 7%;
   z-index: 10;
-  top:25%;
+  top: 25%;
 }
 
 .button-round {
@@ -88,5 +86,3 @@ button {
   width: 24px;
   margin-left: -15px;
 }
-
-

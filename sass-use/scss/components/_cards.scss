@@ -5,18 +5,16 @@
   flex-direction: column;
   gap: 18px;
   position: relative;
-@media (min-width: 1080px){
-  flex-direction: row;
-  flex-wrap:wrap ;
-  justify-content: center;
-
-}
-  
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   a {
-    @media (min-width: 1080px){
-      width:35%;
-      }
+    @media (min-width: 1080px) {
+      width: 35%;
+    }
     .restaurants__cards {
       margin-left: 17px;
       margin-right: 18px;

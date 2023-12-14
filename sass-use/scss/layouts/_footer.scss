@@ -3,20 +3,18 @@
 footer {
   background-color: $secondary_background_color;
   padding: 22px 25px 22px 25px;
-  @media (min-width: 1080px){
+  @media (min-width: 1080px) {
     display: flex;
-    order:+1;
+    order: +1;
     align-items: center;
     justify-content: flex-end;
-    gap:70px;
-    
+    gap: 70px;
   }
 
   .footer__logo {
-    @media (min-width: 1080px){
+    @media (min-width: 1080px) {
       display: flex;
-      order:+1;
-      
+      order: +1;
     }
     padding-bottom: 16px;
     h1 {
@@ -30,14 +28,12 @@ footer {
 }
 .footer-container {
   color: white;
-  @media (min-width: 1080px){
+  @media (min-width: 1080px) {
     display: flex;
     gap: 10px;
   }
 
-
   .footer__contents {
-    
     display: flex;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -46,19 +42,18 @@ footer {
     h3 {
       padding-left: 11px;
     }
-    @media (min-width: 900px){
-      h3{padding-right: 25px;}
-
-     }
+    @media (min-width: 900px) {
+      h3 {
+        padding-right: 25px;
+      }
+    }
   }
 
-
-  .footer__copyrights{
-    @media (min-width: 900px){
+  .footer__copyrights {
+    @media (min-width: 900px) {
       display: flex;
       gap: 20px;
     }
-    
   }
   .footer__copyrights,
   h3 {

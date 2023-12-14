@@ -1,14 +1,12 @@
 @use "../utils/" as *;
 
-
-
 .header__location {
   height: 50px;
   background-color: $primary_backgroung_color;
   @include flexbox-center-both;
 
-  .location_button{
-    @include flexbox-center-both
+  .location_button {
+    @include flexbox-center-both;
   }
 }
 

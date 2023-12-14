@@ -6,8 +6,8 @@
   border-radius: 20px;
   margin-top: -30px;
   position: relative;
-  h2{
-    margin:0;
+  h2 {
+    margin: 0;
   }
 
   &__container {
@@ -51,9 +51,9 @@
   .cards__price {
     padding: 15px;
     font-weight: 700;
-    p{
-    margin-bottom: 0;
-}
+    p {
+      margin-bottom: 0;
+    }
   }
   .button_order {
     @include flexbox-center-both;
