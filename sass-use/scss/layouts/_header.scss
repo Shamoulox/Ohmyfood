@@ -5,10 +5,6 @@
   background-color: $primary_backgroung_color;
   @include flexbox-center-both;
 
-  .location_button {
-    @include flexbox-center-both;
-  }
-}
 
 .header__logo {
   padding: 14px 89px 13px 89px;

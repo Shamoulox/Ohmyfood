@@ -41,13 +41,6 @@
     }
   }
 
-  &__container {
-    padding-top: 40px;
-    h2 {
-      font-size: 16px;
-      font-weight: 300;
-    }
-  }
   &__cards {
     @include btn;
     @include flexbox-center-verticaly;
