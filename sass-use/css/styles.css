@@ -5,11 +5,6 @@
   align-items: center;
   justify-content: center;
 }
-.header__location .location_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .header__logo {
   padding: 14px 89px 13px 89px;
@@ -32,6 +27,7 @@
   padding-right: 5%;
   position: absolute;
   left: 17px;
+  top: 28px;
 }
 @media (min-width: 1080px) {
   .menu_header {
@@ -69,7 +65,7 @@ footer .footer__logo {
   }
 }
 footer .footer__logo h1 {
-  color: white;
+  color: #ffffff;
   font-family: "shrikhand";
   font-style: normal;
   font-weight: 400;
@@ -77,7 +73,7 @@ footer .footer__logo h1 {
 }
 
 .footer-container {
-  color: white;
+  color: #ffffff;
 }
 @media (min-width: 1080px) {
   .footer-container {
@@ -87,20 +83,28 @@ footer .footer__logo h1 {
 }
 .footer-container .footer__contents {
   display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  padding-bottom: 7px;
+}
+@media (min-width: 1080px) {
+  .footer-container .footer__contents {
+    flex-direction: row;
+  }
 }
 .footer-container .footer__contents h3 {
   padding-left: 11px;
+  font-weight: 500;
 }
-@media (min-width: 900px) {
+@media (min-width: 1080px) {
   .footer-container .footer__contents h3 {
     padding-right: 25px;
   }
 }
-@media (min-width: 900px) {
+.footer-container .footer__contents .footer__contents__title {
+  display: flex;
+}
+@media (min-width: 1080px) {
   .footer-container .footer__copyrights {
     display: flex;
     gap: 20px;
@@ -143,6 +147,11 @@ footer .footer__logo h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-top: 40px;
+}
+.menu__container h2 {
+  font-size: 16px;
+  font-weight: 300;
 }
 .menu__title {
   display: flex;
@@ -159,13 +168,6 @@ footer .footer__logo h1 {
   font-size: 28px;
   font-weight: 400;
   padding-right: 32px;
-}
-.menu__container {
-  padding-top: 40px;
-}
-.menu__container h2 {
-  font-size: 16px;
-  font-weight: 300;
 }
 .menu__cards {
   border-radius: 20px;
@@ -238,16 +240,12 @@ footer .footer__logo h1 {
 .restaurants h1 {
   padding-left: 20px;
   margin-right: 80px;
-  height: 48px;
+  height: 56px;
 }
 @media (min-width: 1080px) {
   .restaurants h1 {
     margin-left: 95px;
   }
-}
-
-.cards-contents h2 {
-  margin: 0;
 }
 
 .location__placeholder {
@@ -344,7 +342,7 @@ button {
   justify-content: center;
   border-radius: 50%;
   background-color: #9356dc;
-  color: white;
+  color: #f6f6f6;
   height: 24px;
   width: 24px;
   margin-left: -15px;
@@ -378,7 +376,7 @@ button {
 .container__restaurants__cards a .restaurants__cards {
   margin-left: 17px;
   margin-right: 18px;
-  background-color: white;
+  background-color: #ffffff;
   height: 251px;
   border-radius: 25px;
   position: relative;
@@ -400,6 +398,9 @@ button {
   margin: 0;
   font-weight: 300;
   font-size: 17px;
+}
+.cards-contents h2 {
+  margin: 0;
 }
 
 * {

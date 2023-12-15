@@ -4,7 +4,7 @@
   height: 50px;
   background-color: $primary_backgroung_color;
   @include flexbox-center-both;
-
+}
 
 .header__logo {
   padding: 14px 89px 13px 89px;
@@ -22,10 +22,10 @@
   i {
     padding-right: 5%;
     position: absolute;
-    left:17px;
-
+    left: 17px;
+    top: 28px;
   }
-  @media (min-width: 1080px){
+  @media (min-width: 1080px) {
     padding-left: 5%;
   }
 }

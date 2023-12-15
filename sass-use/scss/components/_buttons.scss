@@ -81,7 +81,7 @@ button {
   @include flexbox-center-both;
   border-radius: 50%;
   background-color: $primary_color;
-  color: white;
+  color: $main_backround_color;
   height: 24px;
   width: 24px;
   margin-left: -15px;

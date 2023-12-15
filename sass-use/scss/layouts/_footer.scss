@@ -18,7 +18,7 @@ footer {
     }
     padding-bottom: 16px;
     h1 {
-      color: white;
+      color: $tertiary_background_color;
       font-family: "shrikhand";
       font-style: normal;
       font-weight: 400;
@@ -27,29 +27,37 @@ footer {
   }
 }
 .footer-container {
-  color: white;
+  color: $tertiary_background_color;
   @media (min-width: 1080px) {
     display: flex;
     gap: 10px;
   }
 
   .footer__contents {
+    @media (min-width: 1080px) {
+      flex-direction: row;
+    }
     display: flex;
+    flex-direction: column;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    padding-bottom: 7px;
+
     h3 {
       padding-left: 11px;
+      font-weight: 500;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 1080px) {
       h3 {
         padding-right: 25px;
       }
     }
+    .footer__contents__title {
+      display: flex;
+    }
   }
 
   .footer__copyrights {
-    @media (min-width: 900px) {
+    @media (min-width: 1080px) {
       display: flex;
       gap: 20px;
     }
