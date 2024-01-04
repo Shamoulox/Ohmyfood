@@ -16,6 +16,7 @@
   width: 50%;
   span {
     color: $tertiary_background_color;
+    
   }
 }
 
@@ -35,7 +36,9 @@
   font-size: 16px;
   @media (min-width: 1080px) {
     width: 25%;
+    
   }
+
   &__purple {
     height: 50px;
     background: $button-gradient;
@@ -43,6 +46,16 @@
     font-weight: 500;
     font-size: 16px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    &:hover {
+      background: $button-gradient-light;
+    }
+
+    @media (min-width: 1080px) {
+      width: 25%;
+      &:hover {
+        background: $button-gradient-light;
+      }
+    }
   }
 
   &__green {
@@ -53,11 +66,6 @@
     z-index: 10;
     margin: 12px 13px;
     border-radius: 2px;
-  }
-  &__purple {
-    @media (min-width: 1080px) {
-      width: 25%;
-    }
   }
 }
 
@@ -89,4 +97,11 @@ button {
 .button_order {
   @include flexbox-center-both;
   padding: 40px 0 40px 0;
+}
+
+.fa-mobile-screen-button, .fa-list-ul,.fa-store {
+  &:hover{
+    background-color: $primary_color;
+
+  }
 }

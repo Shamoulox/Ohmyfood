@@ -143,15 +143,35 @@ footer .footer__logo h1 {
 .menu h2 {
   margin: 0;
 }
-.menu__container {
+.menu__starters, .menu__dishes, .menu__desserts {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding-top: 40px;
 }
-.menu__container h2 {
+@keyframes animationMenu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu__starters h2, .menu__dishes h2, .menu__desserts h2 {
   font-size: 16px;
   font-weight: 300;
+}
+.menu__starters {
+  animation: animationMenu 800ms 2s both;
+}
+.menu__dishes {
+  animation: animationMenu 800ms 3s both;
+}
+.menu__desserts {
+  animation: animationMenu 800ms 4s both;
 }
 .menu__title {
   display: flex;
@@ -305,6 +325,17 @@ footer .footer__logo h1 {
   font-size: 16px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
 }
+.btn__purple:hover {
+  background: linear-gradient(180deg, #090211, #3f373d);
+}
+@media (min-width: 1080px) {
+  .btn__purple {
+    width: 25%;
+  }
+  .btn__purple:hover {
+    background: linear-gradient(180deg, #090211, #3f373d);
+  }
+}
 .btn__green {
   background-color: #99e2d0;
   color: #008766;
@@ -313,11 +344,6 @@ footer .footer__logo h1 {
   z-index: 10;
   margin: 12px 13px;
   border-radius: 2px;
-}
-@media (min-width: 1080px) {
-  .btn__purple {
-    width: 25%;
-  }
 }
 
 button {
@@ -353,6 +379,10 @@ button {
   align-items: center;
   justify-content: center;
   padding: 40px 0 40px 0;
+}
+
+.fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover {
+  background-color: #9356dc;
 }
 
 .container__restaurants__cards {

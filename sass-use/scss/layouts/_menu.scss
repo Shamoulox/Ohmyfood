@@ -22,16 +22,43 @@
     margin: 0;
   }
 
-  &__container {
+  &__starters,
+  &__dishes,
+  &__desserts {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding-top: 40px;
+    @keyframes animationMenu {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     h2 {
       font-size: 16px;
       font-weight: 300;
     }
   }
+// menu animation delay
+
+  &__starters {
+    animation: animationMenu 800ms 2s both;
+  }
+
+  &__dishes {
+    animation: animationMenu 800ms 3s both;
+  }
+  &__desserts {
+    animation: animationMenu 800ms 4s both;
+  }
+
   &__title {
     @media (min-width: 1080px) {
       justify-content: center;
