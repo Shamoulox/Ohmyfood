@@ -74,9 +74,7 @@ button {
   gap: 25px;
 }
 
-.button-hidden {
-  display: none;
-}
+
 
 .button-favorite {
   position: absolute;
@@ -104,4 +102,22 @@ button {
     background-color: $primary_color;
 
   }
+
 }
+.button-hidden {
+  display: none;
+  // background-color: $button-gradient;
+  position: absolute;
+  right: 7%;
+  z-index: 10;
+  top: 25%;
+     &:hover{
+       display: unset;
+     }
+     :active{
+      color:red
+     }
+
+    
+  }
+
