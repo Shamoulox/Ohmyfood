@@ -351,10 +351,6 @@ button {
   gap: 25px;
 }
 
-.button-hidden {
-  display: none;
-}
-
 .button-favorite {
   position: absolute;
   right: 7%;
@@ -383,6 +379,20 @@ button {
 
 .fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover {
   background-color: #9356dc;
+}
+
+.button-hidden {
+  display: none;
+  position: absolute;
+  right: 7%;
+  z-index: 10;
+  top: 25%;
+}
+.button-hidden:hover {
+  display: unset;
+}
+.button-hidden :active {
+  color: red;
 }
 
 .container__restaurants__cards {
