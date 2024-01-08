@@ -356,6 +356,27 @@ button {
   right: 7%;
   z-index: 10;
   top: 25%;
+  cursor: pointer;
+}
+.button-favorite i {
+  position: absolute;
+}
+
+.heart-full {
+  opacity: 1;
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
+  transition: opacity 3s ease-in-out;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart-full:hover {
+  opacity: 1;
+  background-position: 0% 100%;
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
+  transition: opacity 3s ease-in-out;
+  background-color: aqua;
 }
 
 .button-round {
@@ -377,22 +398,10 @@ button {
   padding: 40px 0 40px 0;
 }
 
-.fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover {
+.fa-mobile-screen-button:hover,
+.fa-list-ul:hover,
+.fa-store:hover {
   background-color: #9356dc;
-}
-
-.button-hidden {
-  display: none;
-  position: absolute;
-  right: 7%;
-  z-index: 10;
-  top: 25%;
-}
-.button-hidden:hover {
-  display: unset;
-}
-.button-hidden :active {
-  color: red;
 }
 
 .container__restaurants__cards {

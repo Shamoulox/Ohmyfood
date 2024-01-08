@@ -16,7 +16,6 @@
   width: 50%;
   span {
     color: $tertiary_background_color;
-    
   }
 }
 
@@ -36,7 +35,6 @@
   font-size: 16px;
   @media (min-width: 1080px) {
     width: 25%;
-    
   }
 
   &__purple {
@@ -74,13 +72,32 @@ button {
   gap: 25px;
 }
 
-
-
 .button-favorite {
+  i {
+    position: absolute;
+  }
   position: absolute;
   right: 7%;
   z-index: 10;
   top: 25%;
+  cursor: pointer;
+}
+
+// animation heart
+.heart-full {
+  opacity: 1;
+  background-image: $button-gradient;
+  transition: opacity 3s ease-in-out;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart-full:hover {
+  opacity: 1;
+  background-position: 0% 100%;
+  background-image: $button-gradient;
+  transition: opacity 3s ease-in-out;
+  background-color: aqua
 }
 
 .button-round {
@@ -97,27 +114,10 @@ button {
   padding: 40px 0 40px 0;
 }
 
-.fa-mobile-screen-button, .fa-list-ul,.fa-store {
-  &:hover{
+.fa-mobile-screen-button,
+.fa-list-ul,
+.fa-store {
+  &:hover {
     background-color: $primary_color;
-
   }
-
 }
-.button-hidden {
-  display: none;
-  // background-color: $button-gradient;
-  position: absolute;
-  right: 7%;
-  z-index: 10;
-  top: 25%;
-     &:hover{
-       display: unset;
-     }
-     :active{
-      color:red
-     }
-
-    
-  }
-
