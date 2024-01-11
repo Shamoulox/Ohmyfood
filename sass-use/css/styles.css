@@ -165,13 +165,13 @@ footer .footer__logo h1 {
   font-weight: 300;
 }
 .menu__starters {
-  animation: animationMenu 800ms 2s both;
+  animation: animationMenu 800ms 1s both;
 }
 .menu__dishes {
-  animation: animationMenu 800ms 3s both;
+  animation: animationMenu 800ms 2s both;
 }
 .menu__desserts {
-  animation: animationMenu 800ms 4s both;
+  animation: animationMenu 800ms 3s both;
 }
 .menu__title {
   display: flex;
@@ -212,6 +212,12 @@ footer .footer__logo h1 {
 }
 .menu .cards__price p {
   margin-bottom: 0;
+}
+
+.menu__cards:hover > .button-check {
+  opacity: 1;
+  width: 10%;
+  transition: width 500ms;
 }
 
 .operation {
@@ -363,7 +369,7 @@ button {
 
 .heart-full {
   opacity: 0;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
@@ -374,7 +380,7 @@ button {
 .heart-full:hover {
   opacity: 1;
   background-image: linear-gradient(#ff79da, #9356dc);
-  transition: opacity 3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .button-round {
@@ -400,6 +406,21 @@ button {
 .fa-list-ul:hover,
 .fa-store:hover {
   background-color: #9356dc;
+}
+
+.button-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  position: relative;
+  background-color: #99e2d0;
+  height: 72px;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  font-size: 22px;
+  line-height: 72px;
+  width: 0%;
 }
 
 .container__restaurants__cards {

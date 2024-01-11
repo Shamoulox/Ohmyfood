@@ -29,6 +29,7 @@
     flex-direction: column;
     gap: 12px;
     padding-top: 40px;
+    // menu animation delay
     @keyframes animationMenu {
       0% {
         opacity: 0;
@@ -46,17 +47,16 @@
       font-weight: 300;
     }
   }
-// menu animation delay
 
   &__starters {
-    animation: animationMenu 800ms 2s both;
+    animation: animationMenu 800ms 1s both;
   }
 
   &__dishes {
-    animation: animationMenu 800ms 3s both;
+    animation: animationMenu 800ms 2s both;
   }
   &__desserts {
-    animation: animationMenu 800ms 4s both;
+    animation: animationMenu 800ms 3s both;
   }
 
   &__title {
@@ -95,4 +95,12 @@
       margin-bottom: 0;
     }
   }
+}
+.menu__cards:hover > .button-check {
+  opacity: 1;
+  width:10%;
+  transition: width 500ms;
+  // transition: opacity 0.5s;
+  // transition: opacity 3s ;
+  
 }
