@@ -99,7 +99,10 @@
 .menu__cards:hover > .button-check {
   opacity: 1;
   width:10%;
-  transition: width 500ms;
+  transition: width 500ms ;
+  transition-property: all;
+  
+ 
   // transition: opacity 0.5s;
   // transition: opacity 3s ;
   

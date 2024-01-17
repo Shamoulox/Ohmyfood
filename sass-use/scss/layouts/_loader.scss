@@ -1,0 +1,95 @@
+@use "../utils/" as *;
+
+.loader {
+  background-color: $secondary_background_color;
+  width: 100vw;
+  height: 100vh;
+
+  &__content {
+    @include flexbox-center-both;
+    height: 100vh;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-family: "shrikhand";
+    font-size: 100px;
+  }
+
+  &--animation {
+    @include flexbox-center-both;
+    padding-left: 60px;
+  }
+
+  &__protons {
+    @include flexbox-center-both;
+    position: relative;
+    border: 1px solid blue;
+    background-color: #f9faf9;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    animation: proton 1.5s linear infinite alternate;
+
+    @keyframes proton {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(0.3);
+      }
+      100% {
+        transform: scale(0.7);
+      }
+    }
+  }
+}
+
+.loader__electron {
+  height: 100px;
+  width: 100px;
+    border: solid red 5px;
+  border-radius: 50%;
+  position: absolute;
+  animation: electrons 5s linear infinite;
+  @keyframes electrons {
+    0% {
+      transform: translate(0px) rotate(0deg);
+    }
+    50% {
+    }
+    100% {
+      transform: translate(0px) rotate(360deg);
+    }
+  }
+  .__electron {
+    height: 10px;
+    width: 10px;
+    //   border: solid green;
+    border-radius: 50%;
+    background-color: blueviolet;
+    animation: electronsrotate 0.5s linear infinite alternate;
+    @keyframes electronsrotate {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(2);
+      }
+    }
+  }
+  .__electron1{
+    height: 10px;
+    width: 10px;
+    //   border: solid green;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transform:translate(10px)
+    
+  }
+}
