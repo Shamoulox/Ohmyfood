@@ -556,28 +556,29 @@ a {
 
 .loader__electron {
   height: 100px;
-  width: 100px;
-  border: solid red 5px;
+  width: 1px;
+  border: solid red 1px;
   border-radius: 50%;
   position: absolute;
-  animation: electrons 5s linear infinite;
+  animation: spin 3s linear infinite;
 }
-@keyframes electrons {
+@keyframes spin {
   0% {
-    transform: translate(0px) rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translate(0px) rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 .loader__electron .__electron {
   height: 10px;
   width: 10px;
+  border: solid green;
   border-radius: 50%;
   background-color: blueviolet;
-  animation: electronsrotate 0.5s linear infinite alternate;
+  animation: electronscale 0.5s linear infinite alternate;
 }
-@keyframes electronsrotate {
+@keyframes electronscale {
   0% {
     transform: scale(0);
   }
@@ -588,12 +589,8 @@ a {
     transform: scale(2);
   }
 }
-.loader__electron .__electron1 {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: blueviolet;
-  transform: translate(10px);
+.loader__electron .loader__electron:nth-child(1) {
+  animation-delay: 0.3s;
 }
 
 /*# sourceMappingURL=styles.css.map */
