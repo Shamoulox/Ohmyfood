@@ -51,9 +51,20 @@
   height: 100px;
   width: 1px;
   border: solid red 1px;
-  border-radius: 50%;
   position: absolute;
   animation: spin 3s linear infinite;
+  :nth-child(1) {
+     animation-delay: 6s;
+   }
+  :nth-child(2) {
+     animation-delay: 9s;
+   }
+  :nth-child(3) {
+     animation-delay: 12s;
+   }
+  :nth-child(4) {
+     animation-delay: 16s;
+   }
   @keyframes spin {
     0% {
       transform: rotate(-0deg);
@@ -61,30 +72,27 @@
     50% {
     }
     100% {
-      transform:  rotate(-360deg);
+      transform: rotate(-360deg);
     }
   }
-  .__electron {
-    height: 10px;
-    width: 10px;
-    border: solid green;
-    border-radius: 50%;
-    background-color: blueviolet;
-    animation: electronscale 0.5s linear infinite alternate;
-    @keyframes electronscale {
-      0% {
-        transform: scale(0);
-      }
-      50% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(2);
-      }
+  
+}
+.__electron {
+  height: 10px;
+  width: 10px;
+  border: solid green;
+  border-radius: 50%;
+  background-color: blueviolet;
+  animation: electronscale 0.5s linear infinite alternate;
+  @keyframes electronscale {
+    0% {
+      transform: scale(0);
     }
-  }
-
-  .loader__electron:nth-child(1){
-    animation-delay:.3s;
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(2);
+    }
   }
 }
