@@ -196,6 +196,7 @@ footer .footer__logo h1 {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .menu__txt {
   width: 85%;
@@ -216,9 +217,9 @@ footer .footer__logo h1 {
 
 .menu__cards:hover > .button-check {
   opacity: 1;
-  width: 10%;
-  transition: width 500ms;
-  transition-property: all;
+  transform: translateX(-100%);
+  transition: all 500ms;
+  overflow: hidden;
 }
 
 .operation {
@@ -358,6 +359,13 @@ button {
   gap: 25px;
 }
 
+menu.btn {
+  left: 37%;
+  top: 5%;
+  right: none;
+  cursor: pointer;
+}
+
 .button-favorite {
   position: absolute;
   right: 7%;
@@ -421,7 +429,8 @@ button {
   color: white;
   font-size: 22px;
   line-height: 72px;
-  width: 0%;
+  width: 74px;
+  left: 74px;
   transition-duration: 500ms;
 }
 
@@ -510,7 +519,22 @@ a {
 .loader {
   background-color: #353535;
   width: 100vw;
-  height: 100vh;
+  position: fixed;
+  z-index: 1999;
+  opacity: 1;
+  animation: launcher 4s forwards;
+}
+@keyframes launcher {
+  50% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0, 9;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 .loader__content {
   display: flex;
@@ -528,6 +552,24 @@ a {
   align-items: center;
   justify-content: center;
   padding-left: 60px;
+}
+.loader :nth-child(2) {
+  animation-delay: 350ms;
+}
+.loader :nth-child(3) {
+  animation-delay: 400ms;
+}
+.loader :nth-child(4) {
+  animation-delay: 450ms;
+}
+.loader :nth-child(5) {
+  animation-delay: 500ms;
+}
+.loader :nth-child(6) {
+  animation-delay: 550ms;
+}
+.loader :nth-child(7) {
+  animation-delay: 600ms;
 }
 .loader__protons {
   display: flex;
@@ -550,28 +592,15 @@ a {
     transform: scale(0.3);
   }
   100% {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 }
 
 .loader__electron {
   height: 100px;
   width: 1px;
-  border: solid red 1px;
   position: absolute;
-  animation: spin 3s linear infinite;
-}
-.loader__electron :nth-child(1) {
-  animation-delay: 6s;
-}
-.loader__electron :nth-child(2) {
-  animation-delay: 9s;
-}
-.loader__electron :nth-child(3) {
-  animation-delay: 12s;
-}
-.loader__electron :nth-child(4) {
-  animation-delay: 16s;
+  animation: spin 0.5s linear infinite;
 }
 @keyframes spin {
   0% {
@@ -581,11 +610,9 @@ a {
     transform: rotate(-360deg);
   }
 }
-
-.__electron {
+.loader__electron .__electron {
   height: 10px;
   width: 10px;
-  border: solid green;
   border-radius: 50%;
   background-color: blueviolet;
   animation: electronscale 0.5s linear infinite alternate;
