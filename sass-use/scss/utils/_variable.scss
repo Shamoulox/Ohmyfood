@@ -12,4 +12,5 @@ $light-green-color: #99e2d0;
 // gradients
 
 $button-gradient: linear-gradient(180deg, #ff79da, #9356dc);
-$button-gradient-light: linear-gradient(180deg, #090211, #3f373d);
+// $button-gradient-light: lighten ($button-gradient, -15%);
+

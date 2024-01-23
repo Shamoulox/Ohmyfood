@@ -44,14 +44,20 @@
     font-weight: 500;
     font-size: 16px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    transition: 2s;
+
     &:hover {
-      background: $button-gradient-light;
+      background: $button-gradient;
+      box-shadow: 0px 4px 15px 0px;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: 0.5s ease-in-out;
     }
 
     @media (min-width: 1080px) {
       width: 25%;
       &:hover {
-        background: $button-gradient-light;
+        opacity: 85%;
+        background: $button-gradient;
       }
     }
   }
@@ -72,12 +78,11 @@ button {
   gap: 25px;
 }
 
-menu.btn{
-  left:37%;
-  top:5%;
-  right:none;
+menu.btn {
+  left: 37%;
+  top: 5%;
+  right: none;
   cursor: pointer;
-
 }
 .button-favorite {
   i {
@@ -122,8 +127,9 @@ menu.btn{
 .fa-mobile-screen-button,
 .fa-list-ul,
 .fa-store {
+  color:grey;
   &:hover {
-    background-color: $primary_color;
+  color: $primary_color;
   }
 }
 
@@ -137,7 +143,7 @@ menu.btn{
   color: white;
   font-size: 22px;
   line-height: 72px;
-  width: 74px;
-  left: 74px;
+  width:10%;
+  left: 11%;
   transition-duration: 500ms;
 }

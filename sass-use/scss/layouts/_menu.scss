@@ -92,20 +92,31 @@
   }
 
   .cards__price {
-    padding: 15px;
-    font-weight: 700;
-    p {
-      margin-bottom: 0;
+      font-weight: 700;
+      transform: translateX(190%);
+      p {
+        margin-bottom: 0;
+        font-weight: 700;
+      }
     }
+    
   }
-}
-.menu__cards:hover > .button-check {
-  opacity: 1;
-  transform: translateX(-100%);
-  // transition: width 500ms;
-  transition: all 500ms;
-  overflow: hidden;
+  .menu__cards:hover > .button-check , .cards__price{
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: all 500ms;
+    overflow: hidden;
+    // width:0%
+    
+  }
   
+  
+  .menu__cards:hover> .cards__price {
+  
+  transition: all 500ms;
+  transform: translateX(-100%);
+  overflow: hidden;
+ 
+
+
 }
-
-
