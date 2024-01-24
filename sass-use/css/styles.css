@@ -111,7 +111,8 @@ footer .footer__logo h1 {
   }
 }
 .footer-container .footer__copyrights,
-.footer-container h3 {
+.footer-container h3, .footer-container a {
+  color: #ffffff;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -163,6 +164,8 @@ footer .footer__logo h1 {
 .menu__starters h2, .menu__dishes h2, .menu__desserts h2 {
   font-size: 16px;
   font-weight: 300;
+  border-bottom: solid 3px #99e2d0;
+  width: 5%;
 }
 .menu__starters {
   animation: animationMenu 800ms 1s both;
@@ -209,23 +212,16 @@ footer .footer__logo h1 {
 }
 .menu .cards__price {
   font-weight: 700;
-  transform: translateX(190%);
+  transform: translateX(100%);
+  transition-duration: 500ms;
 }
 .menu .cards__price p {
   margin-bottom: 0;
   font-weight: 700;
 }
-
-.menu__cards:hover > .button-check, .cards__price {
-  opacity: 1;
-  transform: translateX(-100%);
+.menu .menu__cards:hover > .cards__price {
   transition: all 500ms;
-  overflow: hidden;
-}
-
-.menu__cards:hover > .cards__price {
-  transition: all 500ms;
-  transform: translateX(-100%);
+  transform: translateX(-40%);
   overflow: hidden;
 }
 
@@ -339,13 +335,13 @@ footer .footer__logo h1 {
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-  transition: 2s;
+  transition: 1s;
 }
 .btn__purple:hover {
   background: linear-gradient(180deg, #ff79da, #9356dc);
   box-shadow: 0px 4px 15px 0px;
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
+  opacity: 85%;
 }
 @media (min-width: 1080px) {
   .btn__purple {
@@ -354,6 +350,7 @@ footer .footer__logo h1 {
   .btn__purple:hover {
     opacity: 85%;
     background: linear-gradient(180deg, #ff79da, #9356dc);
+    transition: 1s ease-in-out;
   }
 }
 .btn__green {
@@ -449,6 +446,13 @@ menu.btn {
   width: 10%;
   left: 11%;
   transition-duration: 500ms;
+}
+
+.menu__cards:hover > .button-check {
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: all 500ms;
+  overflow: hidden;
 }
 
 .container__restaurants__cards {
