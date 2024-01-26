@@ -79,12 +79,6 @@ button {
   gap: 25px;
 }
 
-menu.btn {
-  left: 37%;
-  top: 5%;
-  right: none;
-  cursor: pointer;
-}
 .button-favorite {
   i {
     position: absolute;
@@ -103,6 +97,7 @@ menu.btn {
   -webkit-background-clip: text;
   background-clip: text;
   z-index: 100;
+  position: absolute;
 }
 
 .heart-full:hover {

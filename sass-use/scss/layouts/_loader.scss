@@ -6,17 +6,20 @@
   position: fixed;
   z-index: 1999;
   opacity: 1;
-  animation: launcher 4s forwards ;
+  animation: launcher 4s forwards;
 
-@keyframes launcher{
-  
-  50%{opacity:0.7;}
-  90%{opacity: 0,9;}
-  100%{opacity:0;
-  z-index: -1;
+  @keyframes launcher {
+    50% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0, 9;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
   }
-}
-  
 
   &__content {
     @include flexbox-center-both;
