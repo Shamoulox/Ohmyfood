@@ -245,12 +245,14 @@ footer .footer__logo h1 {
   text-align: center;
   height: 287px;
 }
-.reservation h1 {
+.reservation h3 {
   display: flex;
   justify-content: center;
   height: 68px;
   padding: 39px 42px 0 58px;
   margin: 0;
+  font-size: 24px;
+  background-color: aqua;
 }
 .reservation p {
   height: 46px;
@@ -520,6 +522,10 @@ h1 {
 h2 {
   font-size: 18px;
   font-weight: 700px;
+}
+
+h3 {
+  font-size: 24px font-weight 700px;
 }
 
 p {

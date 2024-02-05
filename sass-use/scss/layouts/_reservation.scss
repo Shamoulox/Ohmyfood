@@ -4,11 +4,13 @@
   background-color: $main_backround_color;
   text-align: center;
   height: 287px;
-  h1 {
+  h3 {
     @include flexbox-center-horizont;
     height: 68px;
     padding: 39px 42px 0 58px;
     margin: 0;
+    font-size: 24px;
+    background-color: aqua;
   }
   p {
     height: 46px;
